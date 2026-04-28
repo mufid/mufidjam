@@ -1,0 +1,9 @@
+.git
+.kamal
+.context
+frontend/node_modules
+node_modules
+public
+tmp
+log
+*.md

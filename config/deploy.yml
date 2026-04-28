@@ -1,0 +1,20 @@
+service: async-cafe-workshop
+image: mufidjam/async-cafe-workshop
+
+servers:
+  web:
+    - mufidjam.apps.skyandmurmur.com
+
+proxy:
+  ssl: true
+  host: mufidjam.apps.skyandmurmur.com
+  app_port: 9292
+
+registry:
+  server: localhost:5555
+
+builder:
+  arch: amd64
+
+ssh:
+  user: root
