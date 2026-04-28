@@ -9,6 +9,8 @@ proxy:
   ssl: true
   host: mufidjam.apps.skyandmurmur.com
   app_port: 9292
+  healthcheck:
+    path: /up
 
 registry:
   server: localhost:5555

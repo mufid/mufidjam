@@ -137,6 +137,10 @@ run do |env|
 			end
 		end or [400, {}, ["WebSocket upgrade required"]]
 
+	# Health check
+	elsif path == "/up"
+		[200, { "content-type" => "text/plain" }, ["OK"]]
+
 	# Root redirect to random room
 	elsif path == "/" || path == ""
 		room_id = SecureRandom.hex(4)
