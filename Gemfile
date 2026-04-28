@@ -1,0 +1,11 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
+gem 'lively'
+gem 'io-watch'
+gem 'agent-context'
+
+gem 'falcon'
+gem 'async-websocket'
+
