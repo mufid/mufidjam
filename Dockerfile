@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 COPY Gemfile Gemfile.lock ./
-RUN bundle install --without development test
+RUN bundle install
 
 COPY config.ru ./
 COPY --from=frontend-build /app/public ./public
