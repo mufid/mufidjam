@@ -1,6 +1,6 @@
 # mufidjam
 
-Two-hours Hacks from Async Cafe Workshop
+Two-hours Hacks from [Async Cafe Workshop](https://connpass.com/event/390663/).
 
 A multiplayer whiteboard application built with Ruby and tldraw. The backend uses Falcon with async-websocket to handle real-time WebSocket connections, synchronizing drawing state and cursor presence across all participants in a room. The frontend is a React app powered by tldraw v4.
 
