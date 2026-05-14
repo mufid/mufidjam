@@ -4,7 +4,8 @@ WORKDIR /app/frontend
 COPY frontend/package.json frontend/package-lock.json ./
 RUN npm ci
 COPY frontend/ ./
-RUN npm run build
+RUN --mount=type=secret,id=TLDRAW_LICENSE_KEY \
+    VITE_TLDRAW_LICENSE_KEY=$(cat /run/secrets/TLDRAW_LICENSE_KEY) npm run build
 
 # Stage 2: Ruby application
 FROM ruby:4.0-slim AS runtime

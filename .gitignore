@@ -9,3 +9,7 @@ public/
 
 # Claude context
 .context/
+
+# Kamal Secrets
+.kamal/secrets
+
