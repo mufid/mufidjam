@@ -3,10 +3,10 @@ image: mufidjam/async-cafe-workshop
 
 servers:
   web:
-    - mufidjam.apps.skyandmurmur.com
+    - mufidjam-int.jkt.skyandmurmur.com
 
 proxy:
-  ssl: true
+  ssl: false
   host: mufidjam.apps.skyandmurmur.com
   app_port: 9292
   healthcheck:
@@ -22,3 +22,4 @@ builder:
 
 ssh:
   user: root
+  proxy: root@wg.skyandmurmur.com
