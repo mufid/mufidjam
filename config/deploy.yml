@@ -22,4 +22,3 @@ builder:
 
 ssh:
   user: root
-  proxy: root@wg.skyandmurmur.com
